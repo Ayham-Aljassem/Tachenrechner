@@ -5,9 +5,56 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Taschenrechner"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="215,262,0,0" VerticalAlignment="Top"/>
-
+        Title="MainWindow" Height="185" Width="179"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize" Margin="0,0,10,0" FontWeight="Bold" FontSize="15">
+    <Grid VerticalAlignment="Stretch" HorizontalAlignment="Center">
+        <Grid.Style>
+            <Style/>
+        </Grid.Style>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <TextBox Grid.Row="0" IsEnabled="False" Margin="0,0,0,10" Grid.RowSpan="2"/>
+        <Grid Grid.Row="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="5"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="5"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="5"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions >
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="5"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="5"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="5"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Row="0" Grid.Column="0" Content="  1  "  Width="Auto"/>
+            <Button Grid.Row="0" Grid.Column="2" Content="  2  "/>
+            <Button Grid.Row="0" Grid.Column="4" Content="  3  "/>
+            <Button Grid.Row="0" Grid.Column="6" Content="  +  "/>
+            <Button Grid.Row="2" Grid.Column="0" Content="  4  "/>
+            <Button Grid.Row="2" Grid.Column="2" Content="  5  "/>
+            <Button Grid.Row="2" Grid.Column="4" Content="  6  "/>
+            <Button Grid.Row="2" Grid.Column="6" Content="  -  "/>
+            <Button Grid.Row="4" Grid.Column="0" Content="  7  "/>
+            <Button Grid.Row="4" Grid.Column="2" Content="  8  "/>
+            <Button Grid.Row="4" Grid.Column="4" Content="  9  "/>
+            <Button Grid.Row="4" Grid.Column="6" Content="  *  "/>
+            <Button Grid.Row="6" Grid.Column="2" Content="  0  "/>
+            <Button Grid.Row="6" Grid.Column="4" Content="  /  "/>
+            <Button Grid.Row="6" Grid.Column="6" Content="  =  "/>
+        </Grid>
     </Grid>
 </Window>
